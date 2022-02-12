@@ -1,0 +1,10 @@
+@mixin media($range, $width){
+    @media screen and (#{$range}-width: $width) {
+        @content;
+    }
+}
+@mixin font($size, $height, $color) {
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
